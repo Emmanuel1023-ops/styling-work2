@@ -47,16 +47,10 @@ Tested and verified on:
 - Safari
 - Microsoft Edge
 
-## 📸 Screenshots
-Include screenshots of your styled form here (e.g., desktop and mobile views).
-
-## 📁 File Structure
-
-
-
 
 ## ✅ How to Use
 Open `index.html` in any browser to view the styled form. All styling is handled via `styles.css`.
 
 ## 🧪 Validation
 CSS validated using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
