@@ -51,6 +51,4 @@ Tested and verified on:
 ## ✅ How to Use
 Open `index.html` in any browser to view the styled form. All styling is handled via `styles.css`.
 
-## 🧪 Validation
-CSS validated using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-
+#
