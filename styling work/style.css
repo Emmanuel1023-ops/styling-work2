@@ -1,0 +1,246 @@
+/* ================================
+   Reset & Base Styles
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ================================
+   CSS Variables
+================================ */
+:root {
+  --primary-blue: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+
+  --bg: #f9fafb;
+  --white: #ffffff;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --border: #d1d5db;
+  --border-focus: #2563eb;
+
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+
+  --accent-purple: #8b5cf6;
+  --accent-pink: #ec4899;
+}
+/* ================================
+   Form Container
+================================ */
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--white);
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+/* ================================
+   Typography
+================================ */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--accent-purple);
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+/* ================================
+   Input Fields
+================================ */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--white);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-light);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: var(--primary-light);
+}
+
+/* ================================
+   Special Inputs
+================================ */
+input[type="range"] {
+  accent-color: var(--primary-blue);
+  height: 2px;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="time"],
+input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--white);
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+  accent-color: var(--primary-blue);
+}
+/* ================================
+   Buttons
+================================ */
+button[type="submit"],
+button[type="reset"] {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* Reset Button */
+button[type="reset"] {
+  background-color: var(--accent-pink);
+  color: var(--white);
+  margin-left: 1rem;
+}
+
+button[type="reset"]:hover {
+  background-color: var(--accent-purple);
+}
+
+button[type="reset"]:active {
+  transform: scale(0.98);
+}
+/* ================================
+   Responsive Design
+================================ */
+@media (max-width: 640px) {
+  .form-container {
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+/* ================================
+   Fieldset & Legend Styling
+================================ */
+fieldset {
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent-purple);
+  padding: 0 0.5rem;
+  background-color: var(--white);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+/* ================================
+   Spacing & Layout
+================================ */
+
+/* Margins between sections */
+fieldset {
+  margin-bottom: 2rem;
+}
+
+.form-container form > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* Padding inside inputs and labels */
+label {
+  padding-left: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.75rem;
+}
+
+/* Line breaks */
+br {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Box Model Consistency */
+input,
+select,
+textarea,
+button {
+  box-sizing: border-box;
+}
